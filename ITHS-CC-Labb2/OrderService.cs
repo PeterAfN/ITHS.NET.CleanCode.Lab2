@@ -5,15 +5,17 @@ namespace ITHS_CC_Labb2
     public class OrderService : IOrderService
     {
         private readonly IOrder _iOrder;
+        private readonly ConsoleWriteLoggingStrategy _consoleWriteLoggingStrategy;
 
-        public OrderService(IOrder iOrder)
+        public OrderService(IOrder iOrder, ConsoleWriteLoggingStrategy consoleWriteLoggingStrategy)
         {
             _iOrder = iOrder;
+            _consoleWriteLoggingStrategy = consoleWriteLoggingStrategy;
         }
 
         public void Start()
         {
-            StatusLogger _log = new(new ConsoleWriteLoggingStrategy());
+            StatusLogger _log = new(_consoleWriteLoggingStrategy);
             _log.Status("Attempting to process order with ID " + _iOrder.ID);
 
             if (Process())

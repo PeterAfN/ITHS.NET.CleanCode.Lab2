@@ -9,6 +9,6 @@ IOrder slowOrder = new Order
     TotalPrice = 100,
 };
 
-IOrderService orderService = new OrderService(slowOrder);
+IOrderService orderService = new OrderService(slowOrder, new ConsoleWriteLoggingStrategy());
 
 orderService.Start();  
