@@ -1,4 +1,15 @@
-﻿# Labb 2
+# Labb 2 Ändringar
+## Ändringar jag har gjort i de olika klasserna:
+
+- OrderService.cs
+   - Klassen ändrad till Dependency Injection så att klassen är beroende av IOrder.cs interfacet. Nu blir klassen är beroende av en abstraktion IOrder.cs istället för en konkret implementation av Order.cs
+   - Metoden ProcessOrder() är förenklad genom att If/Else-satserna har kortats ner med bibehållen funktionalitet (DRY).
+
+
+
+
+
+# Labb 2
 
 I denna laboration skall vi pröva att refaktorera lite kod efter de regler vi lärt oss hittils. 
 
