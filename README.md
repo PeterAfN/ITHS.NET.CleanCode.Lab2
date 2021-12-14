@@ -1,3 +1,5 @@
+Labben har gjorts av Peter Palosaari.
+
 # Labb 2 Ändringar
 ## Ändringar jag har gjort i de olika klasserna:
 
