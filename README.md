@@ -1,6 +1,10 @@
-Labben har gjorts av Peter Palosaari.
+# ITHS.NET.CleanCode.Lab2
 
-# Labb 2 Ändringar
+Denna lab ingick i kursen "Clean Code och testbar kod  30p" på IT-Högskolan i Göteborg som jag läste våren år 2022.
+
+# Uppgiftsbeskrivningen för lab 2:
+
+## Labb 2 - Ändringar
 ## Ändringar jag har gjort i de olika klasserna:
 
 - OrderService.cs
